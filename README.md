@@ -24,3 +24,7 @@ Note it will overwrite your local configuration, please backup them, if necessar
     ```
     ~/.vim_tmux_config/build.sh uninstall
     ```
+
+# View Example
+
+![Image text](https://github.com/FukuanWang/vim_tmux_config/main/img/vim_tmux_example.png)
