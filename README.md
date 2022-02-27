@@ -27,4 +27,4 @@ Note it will overwrite your local configuration, please backup them, if necessar
 
 # View Example
 
-![Image text](https://github.com/FukuanWang/vim_tmux_config/main/img/vim_tmux_example.png)
+![Image Error](https://github.com/FukuanWang/vim_tmux_config/blob/main/img/vim_tmux_example.png)
