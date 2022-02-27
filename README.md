@@ -5,7 +5,7 @@ Note it will overwrite your local configuration, please backup them, if necessar
 ## install steps
 1. clone project to your usr path:
     ```
-    git clone ssh://git@gitlab.xiaopeng.local:10022/wangfk/vim_tmux_config.git ~/.vim_tmux_config
+    git clone https://github.com/FukuanWang/vim_tmux_config.git ~/.vim_tmux_config
     ```
 2. install vim & tmux configurations:
     ```
