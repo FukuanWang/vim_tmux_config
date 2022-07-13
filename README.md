@@ -25,6 +25,6 @@ Note it will overwrite your local configuration, please backup them, if necessar
     ~/.vim_tmux_config/build.sh uninstall
     ```
 
-# View Example
+## View Example
 
-![Image Error](https://github.com/FukuanWang/vim_tmux_config/blob/main/img/vim_tmux_example.png)
+![Image](https://github.com/FukuanWang/vim_tmux_config/blob/main/img/vim_tmux_example.png)
