@@ -1,7 +1,7 @@
 syntax on
 
 " ============================================================================================
-" basic settings  
+" general settings  
 " ============================================================================================
 set background=dark                             " set background color
 set number                                      " set number
@@ -49,7 +49,7 @@ nnoremap <silent> # :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>
 " sulution: sudo apt-get install vim-gtk3 -y
 " ref: https://superuser.com/questions/1559544/how-to-copy-from-vim-to-clipboard-on-ubuntu-20-04 
 " ============================================================================================
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 
 " ============================================================================================
