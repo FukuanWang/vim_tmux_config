@@ -55,13 +55,13 @@ nnoremap <silent> # :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>
 " ============================================================================================
 " search function  
 " ============================================================================================
-function! FindAll()
-	call inputsave()
-	let p = input('Enter pattern:')
-	call inputrestore()
-	execute 'vimgrep "'.p.'" % |copen'
-endfunction
-noremap <C-m> :call FindAll()<cr>
+" function! FindAll()
+" 	call inputsave()
+" 	let p = input('Enter pattern:')
+" 	call inputrestore()
+" 	execute 'vimgrep "'.p.'" % |copen'
+" endfunction
+" noremap <C-m> :call FindAll()<cr>
 
 " ============================================================================================
 " vimterm settings 

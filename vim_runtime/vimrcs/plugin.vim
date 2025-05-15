@@ -31,7 +31,7 @@ let Tlist_WinWidth=60
 " ============================================================================================
 " colorscheme configuration 
 " ============================================================================================
-"colorscheme molokai
-"colorscheme gruvbox
-colorscheme PaperColor
+colorscheme molokai
+" colorscheme gruvbox
+" colorscheme PaperColor
 
