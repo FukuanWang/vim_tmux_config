@@ -1,20 +1,13 @@
 #!/bin/bash
 
-CRT_DIR=$PWD
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-#install tpm
-if [ -e ~/.tmux/plugins/tpm ];
-then
-    echo "git pull tpm"
-    cd ~/.tmux/plugins/tpm
-    git pull
-    cd $CRT_DIR
+if [ -d ~/.tmux/plugins/tpm ]; then
+    echo "updating tpm..."
+    git -C ~/.tmux/plugins/tpm pull
 else
+    echo "installing tpm..."
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
-cp ~/.vim_tmux_config/tmux_runtime/tmux.conf ~/.tmux.conf
-
-# echo "alias tnew='tmux new -s'" >> ~/.bashrc
-# echo "alias tat='tmux a -t'" >> ~/.bashrc
-
+cp "$SCRIPT_DIR/tmux.conf" ~/.tmux.conf

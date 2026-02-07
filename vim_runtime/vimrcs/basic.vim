@@ -11,11 +11,15 @@ set showcmd                                     " show command
 set wrap                                        " wrap lines
 set hlsearch                                    " highlight search
 set smartcase                                   " smart case mode
-set paste                                       " set paste
+set incsearch                                   " incremental search
+set pastetoggle=<F2>                            " toggle paste mode with F2
+set autoindent                                  " autoindent
 set expandtab                                   " use spaces instead of tabs
 set shiftwidth=4                                " 1 tab = 4 spaces
 set tabstop=4                                   " 1 tab = 4 spaces
 set smarttab                                    " be smart when using tabs
+set scrolloff=5                                 " keep 5 lines above/below cursor
+set backspace=indent,eol,start                  " backspace over everything
 set tags=tags                                   " ctags setting
 
 " ============================================================================================
@@ -42,14 +46,17 @@ nnoremap <silent> # :let @/= '\<' . expand('<cword>') . '\>' <bar> set hls <cr>
 
 
 " ============================================================================================
-" yank to clipboard 
-" requires : clipbored support
-" use 'vim --version | grep clipboard' to check
-" if support, you will see +clipboard or +xterm_clipboard, otherwise -clipboard/-xterm_clipboard
-" sulution: sudo apt-get install vim-gtk3 -y
-" ref: https://superuser.com/questions/1559544/how-to-copy-from-vim-to-clipboard-on-ubuntu-20-04 
+" yank to clipboard
+" macOS: works out of the box with +clipboard
+" linux: sudo apt-get install vim-gtk3 -y
 " ============================================================================================
-" set clipboard=unnamedplus
+if has('clipboard')
+    if has('macunix') || system('uname') =~# 'Darwin'
+        set clipboard=unnamed
+    else
+        set clipboard=unnamedplus
+    endif
+endif
 
 
 " ============================================================================================
